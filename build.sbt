@@ -13,7 +13,7 @@ ThisBuild / developers := List(
   )
 )
 ThisBuild / publishTo := Some(
-  "GitHub Genius Fish Apache Maven Packages" at "https://maven.pkg.github.com/genius-fish/config"
+  "Config Maven Repo" at "https://maven.pkg.github.com/genius-fish/config"
 )
 ThisBuild / publishMavenStyle := true
 ThisBuild / credentials += Credentials(
