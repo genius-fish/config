@@ -12,6 +12,16 @@ ThisBuild / developers := List(
     url = url("https://genius.fish")
   )
 )
+ThisBuild / publishTo := Some(
+  "GitHub Genius Fish Apache Maven Packages" at "https://maven.pkg.github.com/genius-fish/config"
+)
+ThisBuild / publishMavenStyle := true
+ThisBuild / credentials += Credentials(
+  "GitHub Package Registry",
+  "maven.pkg.github.com",
+  sys.env.getOrElse("GITHUB_PACKAGES_OWNER", "none"),
+  sys.env.getOrElse("GITHUB_PACKAGES_TOKEN", "none")
+)
 
 lazy val root = project
   .in(file("."))
