@@ -3,7 +3,7 @@ ThisBuild / organizationName := "Genius Fish"
 ThisBuild / organizationHomepage := Some(url("https://genius.fish"))
 ThisBuild / scalaVersion := "2.13.10"
 ThisBuild / resolvers += Resolver.mavenLocal
-ThisBuild / externalResolvers += "GitHub Genius Fish Apache Maven Packages" at "https://maven.pkg.github.com/genius-fish/packages"
+ThisBuild / resolvers += "GitHub Genius Fish Apache Maven Packages" at "https://maven.pkg.github.com/genius-fish/packages"
 ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / developers := List(
   Developer(
